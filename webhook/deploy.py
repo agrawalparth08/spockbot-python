@@ -14,7 +14,9 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
+	
 	req = request.get_json(silent=True, force=True)
+	#Debugging request in Heroku logs
 	print("Request:")
 	print(json.dumps(req, indent=4))
 	res = makeWebhookResult(req)
@@ -25,6 +27,8 @@ def webhook():
 	return r
 
 def makeWebhookResult(req):
+	
+	#Refer JSON documentation - https://dialogflow.com/docs/reference/agent/query
 	result = req.get("result")
 	parameters = result.get("parameters")
 	queryText = parameters.get("any")
@@ -40,6 +44,7 @@ def makeWebhookResult(req):
 		#"contextOut": [],
 		"source": "webhook"
 		}
+	
 	if req.get("result").get("action") == "get-query":
 		speech = queryText + "We are yet to integrate query response. Please wait for our next update"
 		print(speech)
@@ -50,12 +55,13 @@ def makeWebhookResult(req):
 		#"contextOut": [],
 		"source": "webhook"
 		}
+	
 def callHackerRankApi(code):
-
 
 	'''
 	Go here and generate your API key.
 	https://www.hackerrank.com/api/docs/
+	If you want to convert the curl command in PHP/JS/Python, go to https://curl.trillworks.com/
 	'''
 	
 	data = [
@@ -64,13 +70,17 @@ def callHackerRankApi(code):
 		('testcases', '["1"]'),
 		('api_key', 'your_api_key'), 
 	]
+	
 	response = requests.post('http://api.hackerrank.com/checker/submission.json', data=data)
 	print(response)
 	sid=response.json()['result']['stdout']
+	
 	if sid is None:
+		#When errors are there in the program, to print the error message
 		error = response.json()['result']['compilemessage'].split('\n')
 		print(error[3])
-		return (error[3].rstrip()) #removing newline at end. yet to push
+		return (error[3].rstrip())
+	
 	return(sid[0])
 
 if __name__ == '__main__':
