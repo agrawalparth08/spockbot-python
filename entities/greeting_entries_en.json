@@ -1,0 +1,32 @@
+[
+  {
+    "value": "Hi",
+    "synonyms": [
+      "Hi"
+    ]
+  },
+  {
+    "value": "Hello",
+    "synonyms": [
+      "Hello"
+    ]
+  },
+  {
+    "value": "Namaste",
+    "synonyms": [
+      "Namaste"
+    ]
+  },
+  {
+    "value": "Hey",
+    "synonyms": [
+      "Hey"
+    ]
+  },
+  {
+    "value": "Hola",
+    "synonyms": [
+      "Hola"
+    ]
+  }
+]

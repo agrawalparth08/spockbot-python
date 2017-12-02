@@ -1,0 +1,37 @@
+{
+  "id": "08e19d1a-99d8-4acb-bc49-069ee29daada",
+  "name": "GetHelp",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "018dbb52-a28c-4efa-84bf-71a8cdb40095",
+          "required": false,
+          "dataType": "@help",
+          "name": "help",
+          "value": "$help",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "SPOCKBOT v1 runs only Python 3+ programs and supports queries based on stackoverflow responses aboard the fictional USS Enterprise. For using the bot, 1)Make first line of your code \"spock\" for running it. 2) Type query [your_query] to seek answers to your doubts."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511364633,
+  "fallbackIntent": false,
+  "events": []
+}

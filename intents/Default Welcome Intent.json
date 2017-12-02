@@ -1,0 +1,40 @@
+{
+  "id": "be37638d-bf80-4043-91c6-5d4f109a76f4",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4c6e440e-904b-47db-b98f-8a2602e573e7",
+          "dataType": "@greeting",
+          "name": "greeting",
+          "value": "$greeting",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Greetings. 🖖 I am your friendly vulcan bot here to help you with Python."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

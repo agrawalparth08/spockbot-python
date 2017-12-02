@@ -1,0 +1,52 @@
+{
+  "id": "9a095c17-b91f-432c-90ae-f78e12d384f8",
+  "name": "GetQuery",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get-query",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "946841b9-dffd-43aa-85fa-42c4b86159fa",
+          "required": false,
+          "dataType": "@query",
+          "name": "query",
+          "value": "$query",
+          "isList": false
+        },
+        {
+          "id": "7857e304-5ec5-48bf-8e08-d7940ce753f1",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Query is blank. Re-enter."
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "We are yet to solve your queries. Try after few days.."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511367040,
+  "fallbackIntent": false,
+  "events": []
+}

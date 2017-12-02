@@ -1,0 +1,52 @@
+{
+  "id": "2103c295-af32-4771-94b8-68c60d58a442",
+  "name": "GetCode",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get-code",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5f62014e-b3a9-44af-b5e3-bd470ed3801f",
+          "required": false,
+          "dataType": "@code",
+          "name": "code",
+          "value": "$code",
+          "isList": false
+        },
+        {
+          "id": "0105ac3e-b71c-4f0e-a087-9360d9b81ca4",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Need Code!"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "The program was loaded onto the USS Enterprise. However nothing was printed."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511365409,
+  "fallbackIntent": false,
+  "events": []
+}

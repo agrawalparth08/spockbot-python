@@ -1,0 +1,74 @@
+[
+  {
+    "id": "18ff3f20-ea89-4e61-85b2-12f151aec2eb",
+    "data": [
+      {
+        "text": "Query",
+        "alias": "query",
+        "meta": "@query",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "How to remove python?",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ceaacc8b-0192-4c5f-9785-b50c8f30a776",
+    "data": [
+      {
+        "text": "query",
+        "alias": "query",
+        "meta": "@query",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 4
+  },
+  {
+    "id": "40f9e788-7b7e-40da-8939-5be46f736a43",
+    "data": [
+      {
+        "text": "querry",
+        "alias": "query",
+        "meta": "@query",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "a0496a8f-26c5-44eb-947c-b17c87579b36",
+    "data": [
+      {
+        "text": "query",
+        "alias": "query",
+        "meta": "@query",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "how to python",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]
